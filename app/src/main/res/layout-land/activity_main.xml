@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.application.dorbesh.hospitalofdhaka.MainActivity"
+    >
+
+  <RelativeLayout
+      android:id="@+id/activity_main"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:id="@+id/acBar"
+        >
+
+      <include
+          layout="@layout/toolbar_layout"
+          >
+      </include>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"
+        android:scrollbars="vertical"
+        android:layout_below="@id/acBar"
+        ></android.support.v7.widget.RecyclerView>
+
+  </RelativeLayout>
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="bottom|end"
+      >
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_action_all_hospital"
+        android:elevation="6dp"
+        android:id="@+id/fab_hospital"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab_info"
+        app:pressedTranslationZ="12dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/doctorimg_action_name"
+        android:elevation="6dp"
+        android:id="@+id/fab_info"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab_info"
+        android:tag="about"
+        app:pressedTranslationZ="12dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ambulenceimg_action_name"
+        android:elevation="6dp"
+        android:id="@+id/fab_ambulence"
+        android:tag="ambulence"
+        app:backgroundTint="@color/fab_ambulence"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_action_plus"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:id="@+id/fab_plus"
+        app:pressedTranslationZ="12dp"
+        />
+
+
+  </LinearLayout>
+
+  <com.google.android.gms.ads.AdView
+      android:id="@+id/adView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="bottom"
+      android:layout_alignParentBottom="true"
+      ads:adSize="BANNER"
+      ads:adUnitId="@string/banner_ad_unit_id">
+  </com.google.android.gms.ads.AdView>
+
+</android.support.design.widget.CoordinatorLayout>
+
