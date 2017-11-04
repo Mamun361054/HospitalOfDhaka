@@ -1,8 +1,5 @@
 package com.application.dorbesh.hospitalofdhaka;
 
-/**
- * Created by DORBESH on 1/16/2017.
- */
 
 public class Ambulence {
 
