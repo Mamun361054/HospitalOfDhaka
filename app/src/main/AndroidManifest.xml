@@ -34,7 +34,9 @@
 
         <activity
             android:name="com.application.dorbesh.hospitalofdhaka.SplashScreen"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,8 +46,12 @@
         <activity
             android:name="com.application.dorbesh.hospitalofdhaka.HospitalClick"
             android:screenOrientation="portrait" />
-        <activity android:name="com.application.dorbesh.hospitalofdhaka.AmbulenceActivity" />
-        <activity android:name="com.application.dorbesh.hospitalofdhaka.DirectionActivity" />
+        <activity android:name="com.application.dorbesh.hospitalofdhaka.AmbulenceActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.application.dorbesh.hospitalofdhaka.DirectionActivity"
+            android:screenOrientation="portrait"
+            />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -54,10 +60,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyB7exVXGZB_3JtKxUqugb__58BBlVjSfac" />
 
-        <activity android:name="com.application.dorbesh.hospitalofdhaka.DoctorListActivity" />
+        <activity android:name="com.application.dorbesh.hospitalofdhaka.DoctorListActivity"
+            android:screenOrientation="portrait"
+            />
         <activity android:name="nearby.MapsActivity" />
-        <activity android:name="com.application.dorbesh.hospitalofdhaka.HospitalListActivity" />
-        <activity android:name="com.application.dorbesh.hospitalofdhaka.MainActivity"/>
+        <activity android:name="com.application.dorbesh.hospitalofdhaka.HospitalListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.application.dorbesh.hospitalofdhaka.MainActivity"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>

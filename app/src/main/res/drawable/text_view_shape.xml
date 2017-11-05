@@ -10,5 +10,5 @@
         android:top="1dp" />
 
     <corners android:radius="5dp" />
-    <gradient android:startColor="#FF6800" android:centerColor="#FF8000" android:endColor="#FF9700" android:angle="90" />
+    <gradient android:startColor="#f1e0d5" android:centerColor="#0408f1" android:endColor="#eae3d8" android:angle="90" />
 </shape>

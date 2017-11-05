@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/txt"
         android:textStyle="bold"
-        android:text="Emergency Embulence Number"
+        android:text="Emergency Ambulence Number"
         android:gravity="center"
-        android:background="#f5aa06"
+        android:background="#031cac"
         android:textColor="#fff"
         android:textAppearance="?android:textAppearanceMedium"
         />
@@ -24,7 +24,6 @@
         android:layout_below="@+id/txt"
         android:layout_height="wrap_content"
         android:id="@+id/ambulence_recyclerView"
-        android:paddingBottom="50dp"
         ></android.support.v7.widget.RecyclerView>
 
     <com.google.android.gms.ads.AdView
